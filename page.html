@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomat0 - Deteksi Penyakit Tomat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+      }
+
+      html, body {
+        height: 100%;
+        overflow-x: hidden;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .fade-in {
+        animation: fadeIn 0.5s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-1 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center gap-2">
+          <div class="w-20 p-0 m-0">
+            <img src="logotomat.png" alt="logotomat">
+          </div>
+          <div class="h-12">
+            <h1 class="text-3xl font-bold m-0">Tomat0</h1>
+            <p class="text-sm opacity-90 mt-1">Deteksi Penyakit Tanaman Tomat</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto p-6">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Kiri: Upload Gambar -->
+        <div class="card flex-1 p-8 flex flex-col items-center justify-center text-center fade-in">
+          <h2 class="text-xl font-semibold text-slate-700 mb-10">Upload Gambar</h2>
+          <div
+            class="w-full border-2 border-dashed border-slate-300 rounded-xl p-6 bg-slate-100 hover:bg-slate-200 transition"
+          >
+            <p class="text-slate-500 mb-4">
+              Seret gambar ke sini atau klik tombol di bawah
+            </p>
+            <input type="file" accept="image/*" id="fileInput" class="hidden" />
+            <label
+              for="fileInput"
+              class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg cursor-pointer hover:bg-indigo-800 transition"
+            >
+              Pilih Gambar
+            </label>
+          </div>
+          <button
+            class="mt-6 bg-emerald-600 hover:bg-emerald-800 text-white px-6 py-2 rounded-lg transition"
+          >
+            Analisis
+          </button>
+        </div>
+
+        <!-- Kanan: 3 Card Statistik -->
+        <div class="flex flex-col gap-6 flex-1">
+          <!-- Hasil Analisis -->
+          <div class="card p-6 fade-in">
+            <div class="flex justify-between items-start mb-3">
+              <div>
+                <p class="text-slate-500 text-sm m-0">Hasil Analisis</p>
+                <p class="text-3xl font-bold text-slate-800 mt-2">
+                  Nama Penyakit
+                </p>
+              </div>
+              <div
+                class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center"
+              >
+                <i class="bi bi-clipboard2-pulse text-indigo-600 text-2xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Akurasi -->
+          <div class="card p-6 fade-in" style="animation-delay: 0.2s;">
+            <div class="flex justify-between items-start mb-3">
+              <div>
+                <p class="text-slate-500 text-sm m-0">Akurasi Model</p>
+                <p class="text-3xl font-bold text-slate-800 mt-2">0%</p>
+              </div>
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center"
+              >
+                <i class="bi bi-bullseye text-blue-600 text-2xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
