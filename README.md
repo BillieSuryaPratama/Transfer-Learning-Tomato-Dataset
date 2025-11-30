@@ -17,19 +17,17 @@ Dataset yang digunakan adalah **Tomato Leaf Disease Dataset**, yang diperoleh me
 [Tomato Leaf Disease (Kaggle)](https://www.kaggle.com/code/samanfatima7/tomato-leaf-disease-94-accuracy)
 
 ### Struktur Dataset
-- **Total citra:** 11.000  
-- **Data training:** 10.000 citra  
-- **Data validation:** 1.000 citra  
-- **Jumlah kelas:** 10 kelas  
+- **Total citra:** 4.000 citra
+- **Data training:** 2.800 citra
+- **Data validation:** 800 citra
+- **Data testing:** 400 citra 
+- **Jumlah kelas:** 5 kelas  
 
 ### Label Kelas
-- Bacterial Spot
-- Early Blight
-- Late Blight
+- Blight
+- Healthy
 - Leaf Mold
-- Septoria Leaf Spot
 - Spider Mites
-- Target Spot
 - Yellow Leaf Curl Virus
-- Tomato Mosaic Virus
-- Health
+
+
