@@ -14,7 +14,7 @@ Project ini bertujuan untuk mendeteksi penyakit pada daun tomat menggunakan pend
 
 ## Dataset
 Dataset yang digunakan adalah **Tomato Leaf Disease Dataset**, yang diperoleh melalui Kaggle:  
-[Tomato Leaf Disease (Kaggle)](https://www.kaggle.com/code/samanfatima7/tomato-leaf-disease-94-accuracy)
+[Tomato Leaf Disease (Kaggle)](https://www.kaggle.com/datasets/naveedgull/tomato-leaf-disease)
 
 ### Struktur Dataset
 - **Total citra:** 4.000
@@ -29,6 +29,7 @@ Dataset yang digunakan adalah **Tomato Leaf Disease Dataset**, yang diperoleh me
 - Leaf Mold
 - Spider Mites
 - Yellow Leaf Curl Virus
+
 
 
 
