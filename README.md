@@ -17,7 +17,7 @@ Dataset yang digunakan adalah **Tomato Leaf Disease Dataset**, yang diperoleh me
 [Tomato Leaf Disease (Kaggle)](https://www.kaggle.com/code/samanfatima7/tomato-leaf-disease-94-accuracy)
 
 ### Struktur Dataset
-- **Total citra:** 4.000 citra
+- **Total citra:** 4.000
 - **Data training:** 2.800 citra
 - **Data validation:** 800 citra
 - **Data testing:** 400 citra 
@@ -29,5 +29,6 @@ Dataset yang digunakan adalah **Tomato Leaf Disease Dataset**, yang diperoleh me
 - Leaf Mold
 - Spider Mites
 - Yellow Leaf Curl Virus
+
 
 
